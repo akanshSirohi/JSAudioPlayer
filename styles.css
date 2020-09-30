@@ -1,0 +1,82 @@
+img.pp {
+    width:30px;
+    height: 30px;
+}
+
+#volSlider .slider-selection {
+	background: #0ed145;
+}
+
+#seekSlider .slider-selection {
+  background: #8283FF;
+}
+
+#seekSlider {
+  width:100%;
+}
+
+#volSlider {
+  width:12%;
+}
+
+input#ex1 {
+  float: right;
+}
+
+input,div,span {
+  outline: none;
+}
+
+.wellA {
+  padding:0px 36px 36px 36px;
+  background-size: 100% 100%;
+}
+
+img#volLevels {
+ width:40px;
+ height:40px;
+ margin:0px 0px 4px 12px;
+}
+
+img#speaker {
+  width:40px;
+  height:40px;
+  cursor:pointer;
+  margin:0px 5px 1px 0px;
+}
+
+.panel-body {
+  height: 235px;
+	overflow-y: scroll;
+}
+
+input,div,span {
+  -webkit-touch-callout:none;
+  -webkit-user-select:none;
+  -khtml-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select: none;
+}
+@keyframes asoftH {
+  0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+@keyframes asoftV {
+  0% {
+		background-position: 50% 50%
+	}
+	50% {
+		background-position: 100% 100%
+	}
+	100% {
+		background-position: 50% 50%
+	}
+}

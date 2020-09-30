@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Audio Player</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="codeFiles/jquery.min.js"></script>
+<script type="text/javascript" src="codeFiles/bootstrap-slider.min.js"></script>
+<script type="text/javascript" src="codeFiles/bootstrap.min.js"></script>
+<link href="codeFiles/bootstrap-3.3.7.css" rel="stylesheet" type="text/css">
+<link href="codeFiles/bootstrap-slider.min.css" rel="stylesheet" type="text/css">
+<link href="codeFiles/webgradients.css" rel="stylesheet" type="text/css">
+<link href="styles.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<br>
+<div class="container">
+  <!--
+  itmeo_branding
+  north_miracle
+  -->
+<div class="well north_miracle wellA" id="well">
+  <h2>Audio Player&nbsp;&nbsp;</h2>
+  <span class="label label-success">Developed By Akansh Sirohi</span>
+  <span class="label label-primary">Current Song: <span id="songName"></span></span>
+  <br>
+  <br>
+  <div class="row">
+      <span class="seek" onmousemove="setLabel();"><input id="seek" data-slider-id="seekSlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="0.1" data-slider-tooltip="hide" data-slider-value="0"/></span><span id="timeL">00:00/00:00</span>
+      <br><br>
+       <div class="btn-group">
+
+		<button class="btn btn-primary" type="button" onClick="playPrev();">
+         <span class="badge"><img src="img/previous.png" class="pp" /></span>
+       </button>
+
+          <button class="btn btn-primary" type="button" onClick="seekS('b');">
+         <span class="badge"><img src="img/seekP.png" class="pp" /></span>
+       </button>
+
+        <button class="btn btn-primary" type="button" onClick="playMusic();">
+         <span class="badge"><img src="img/play.png" class="pp" id="pp" /></span>
+       </button>
+
+       <button class="btn btn-primary" type="button" onClick="seekS('f');">
+         <span class="badge"><img src="img/seekN.png" class="pp" /></span>
+       </button>
+
+       <button class="btn btn-primary" type="button" onClick="playNext();">
+         <span class="badge"><img src="img/next.png" class="pp" /></span>
+       </button>
+       </div>
+       &nbsp;&nbsp;&nbsp;
+       <img src="img/on.png" id="speaker" onclick="mute();" /><input id="volume" data-slider-id="volSlider" type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="100"/><img src="volLevels/5.png" id="volLevels" />
+   </div>
+</div>
+
+<div class="well north_miracle" id="well2" style="background-size: 100% 100%;">
+<div class="panel panel-primary">
+      <div class="panel-heading">Audio Player Playlist</div>
+      <div class="panel-body bdy">
+				<ul class="nav nav-pills nav-stacked" id="songList">
+				</ul>
+      </div>
+    </div>
+</div>
+</div>
+<font id="plTp" style="position:absolute;visibility:hidden;"></font>
+<script src="script.js"></script>
+</body>
+</html>
