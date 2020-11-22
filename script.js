@@ -202,6 +202,19 @@ function nextSong() {
   }
 }
 
+//Asmit Sirohi's Code
+function shuffle() {
+    old = index;
+    index = (Math.floor(Math.random() * (playlist.length - 1)));
+    audio.pause();
+    audio.currentTime = 0;
+    audio.src = playlist[index];
+    playMusic();
+    updateSongName();
+    activateMe(index + "li", old + "li");
+}
+/*---------------------------------------*/
+
 function reset(val = 0) {
   gTime = "00:00/00:00";
   $("#timeL").html(gTime);
